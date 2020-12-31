@@ -1,0 +1,8 @@
+prefix=/home/admin/catkin_ws/install
+
+Name: pkg1
+Description: Description of pkg1
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: 

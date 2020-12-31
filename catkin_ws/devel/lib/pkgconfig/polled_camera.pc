@@ -1,0 +1,8 @@
+prefix=/home/admin/catkin_ws/devel
+
+Name: polled_camera
+Description: Description of polled_camera
+Version: 1.11.13
+Cflags: -I/home/admin/catkin_ws/devel/include -I/home/admin/catkin_ws/src/polled_camera/include
+Libs: -L/home/admin/catkin_ws/devel/lib -lpolled_camera
+Requires: image_transport message_runtime roscpp sensor_msgs std_msgs

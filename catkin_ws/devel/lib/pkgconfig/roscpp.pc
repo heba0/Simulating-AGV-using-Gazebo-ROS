@@ -1,0 +1,8 @@
+prefix=/home/admin/catkin_ws/devel
+
+Name: roscpp
+Description: Description of roscpp
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/admin/catkin_ws/devel/lib 
+Requires: 

@@ -1,0 +1,2 @@
+gazebo_tutorials:pkg1
+-DCATKIN_DEVEL_PREFIX=/home/admin/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/admin/catkin_ws/install -G Unix Makefiles

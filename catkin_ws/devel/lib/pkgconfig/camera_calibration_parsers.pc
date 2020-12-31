@@ -1,0 +1,8 @@
+prefix=/home/admin/catkin_ws/devel
+
+Name: camera_calibration_parsers
+Description: Description of camera_calibration_parsers
+Version: 1.11.13
+Cflags: -I/home/admin/catkin_ws/src/camera_calibration_parsers/include
+Libs: -L/home/admin/catkin_ws/devel/lib -lcamera_calibration_parsers
+Requires: sensor_msgs

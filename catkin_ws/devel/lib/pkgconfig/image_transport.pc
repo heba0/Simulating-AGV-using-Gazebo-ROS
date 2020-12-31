@@ -1,0 +1,8 @@
+prefix=/home/admin/catkin_ws/devel
+
+Name: image_transport
+Description: Description of image_transport
+Version: 1.11.13
+Cflags: -I/home/admin/catkin_ws/src/image_transport/include
+Libs: -L/home/admin/catkin_ws/devel/lib -limage_transport
+Requires: message_filters pluginlib rosconsole roscpp roslib sensor_msgs

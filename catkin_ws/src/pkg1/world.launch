@@ -1,0 +1,14 @@
+<launch>
+  <!-- We resume the logic in empty_world.launch, changing only the name of the world to be launched -->
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find pkg1)/worlds/long_hallway.world"/>
+    <!-- more default parameters can be changed here -->
+    <arg name="paused" value="true"/>
+    <arg name="use_sim_time" value="true"/>
+    <arg name="gui" value="true"/>
+    <arg name="recording" value="false"/>
+    <arg name="debug" value="false"/>
+  </include>
+   <param name="robot_description" textfile="$(find pkg1)/models/model.sdf" />
+    <node name="sdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen" args="-sdf -model my_robot -param robot_description -y -6"/>    
+</launch>
