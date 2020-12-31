@@ -45,7 +45,7 @@ source /opt/ros/melodic/setup.bashsource /home/admin/catkin_ws/devel/setup.bash
 
     `rostopic pub /my_robot/vel_cmd std_msgs/Float32 1.0`
 
-# Some useful link:
+### Some useful links:
 
 Creating a workspace:
 [http://wiki.ros.org/catkin/Tutorials/create_a_workspace](http://wiki.ros.org/catkin/Tutorials/create_a_workspace)
