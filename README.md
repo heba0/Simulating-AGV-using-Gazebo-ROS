@@ -1,14 +1,14 @@
 **gedit ~/.bashrc**
 
-paste the following at the end of the file:
+- paste the following at the end of the file:
 
 source /opt/ros/melodic/setup.bashsource /home/admin/catkin_ws/devel/setup.bash
 
-save and close the file
+- save and close the file
 
-Go to **gazebo-tutorials-velodyne-master/velodyne_plugin/build**
+- Go to **gazebo-tutorials-velodyne-master/velodyne_plugin/build**
 
-Inside **build** open a terminal and type the following commands
+- Inside **build** open a terminal and type the following commands
 
 **cmake ../**
 
@@ -16,41 +16,34 @@ Inside **build** open a terminal and type the following commands
 
 **export GAZEBO_PLUGIN_PATH=$HOME/gazebo-tutorials-velodyne-master/velodyne_plugin /build:$GAZEBO_PLUGIN_PATH**
 
-open 5 terminals (you can have one terminal with multiple tabs)
+- open 5 terminals (you can have one terminal with multiple tabs)
 
-tab1:
+  - tab1:
+    **roscore**
+    
+  - tab2:  
+    **roslaunch gazebo_ros emptry_world.launch**
+    can also try
+    `rosrun gazebo_ros gazebo`
 
-**roscore**
+  - tab3: (sensor plugin)
+    **rosrun gazebo_plugins hokuyo_node**
 
-tab2:
+  - tab4
+    :(our node)
+    **rosrun pkg1 hokuyoSub.py**
 
-**roslaunch gazebo_ros emptry_world.launch**
+  - tab5:(to visualize nodes and topics)
 
-can also try
+    **rosrun rqt_graph rqt_graph**
 
-`rosrun gazebo_ros gazebo`
+  - tab6: to see all topics:
 
-tab3: (sensor plugin)
+    **rostopic list**
 
-**rosrun gazebo_plugins hokuyo_node**
+  - tab7: to publish to a topic manually eg.:  (/my_robot/vel_cmd is the topic name)
 
-tab4
-
-:(our node)
-
-**rosrun pkg1 hokuyoSub.py**
-
-tab5:(to visualize nodes and topics)
-
-**rosrun rqt_graph rqt_graph**
-
-tab6: to see all topics:
-
-**rostopic list**
-
-tab7: to publish to a topic manually eg.:  (/my_robot/vel_cmd is the topic name)
-
-`rostopic pub /my_robot/vel_cmd std_msgs/Float32 1.0`
+    `rostopic pub /my_robot/vel_cmd std_msgs/Float32 1.0`
 
 Some useful link:
 
