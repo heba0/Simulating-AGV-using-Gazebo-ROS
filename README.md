@@ -47,17 +47,17 @@ source /opt/ros/melodic/setup.bashsource /home/admin/catkin_ws/devel/setup.bash
 
 ### Some useful links:
 
-Creating a workspace:
+- Creating a workspace:
 [http://wiki.ros.org/catkin/Tutorials/create_a_workspace](http://wiki.ros.org/catkin/Tutorials/create_a_workspace)
 
-Creating Packages
+- Creating Packages
 [http://wiki.ros.org/catkin/Tutorials/CreatingPackage](http://wiki.ros.org/catkin/Tutorials/CreatingPackage)
 
-Simulating Roomba on Gazebo
+- Simulating Roomba on Gazebo
 [http://guitarpenguin.is-programmer.com/posts/58100.html](http://guitarpenguin.is-programmer.com/posts/58100.html)
 
-Building the model
+- Building the model
 [http://gazebosim.org/tutorials?tut=build_robot&cat=build_robot](http://gazebosim.org/tutorials?tut=build_robot&cat=build_robot)
 
-Attaching the mesh
+- Attaching the mesh
 [http://gazebosim.org/tutorials/?tut=attach_meshes](http://gazebosim.org/tutorials/?tut=attach_meshes)
