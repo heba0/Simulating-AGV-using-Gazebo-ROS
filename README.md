@@ -32,15 +32,15 @@ export GAZEBO_PLUGIN_PATH=$HOME/gazebo-tutorials-velodyne-master/velodyne_plugin
     
     ```rosrun gazebo_ros gazebo```
 
-  - tab3: (sensor plugin)
+  - tab3 (sensor plugin):
   
     ```rosrun gazebo_plugins hokuyo_node```
 
-  - tab4:(our node)
+  - tab4 (our node):
   
   ```rosrun pkg1 hokuyoSub.py```
 
-  - tab5:(to visualize nodes and topics)
+  - tab5 (to visualize nodes and topics):
 
    ```rosrun rqt_graph rqt_graph```
 
@@ -48,7 +48,7 @@ export GAZEBO_PLUGIN_PATH=$HOME/gazebo-tutorials-velodyne-master/velodyne_plugin
 
     ```rostopic list```
 
-  - tab7: to publish to a topic manually eg.:  (/my_robot/vel_cmd is the topic name)
+  - tab7 (to publish to a topic manually eg.: /my_robot/vel_cmd is the topic name):
 
    ```rostopic pub /my_robot/vel_cmd std_msgs/Float32 1.0```
 
