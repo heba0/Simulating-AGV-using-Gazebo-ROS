@@ -22,17 +22,22 @@ export GAZEBO_PLUGIN_PATH=$HOME/gazebo-tutorials-velodyne-master/velodyne_plugin
 - open 5 terminals (you can have one terminal with multiple tabs)
 
   - tab1:
+  
     ```roscore```
     
   - tab2:  
+  
    ```roslaunch gazebo_ros emptry_world.launch```
     can also try
+    
     ```rosrun gazebo_ros gazebo```
 
   - tab3: (sensor plugin)
+  
     ```rosrun gazebo_plugins hokuyo_node```
 
   - tab4:(our node)
+  
   ```rosrun pkg1 hokuyoSub.py```
 
   - tab5:(to visualize nodes and topics)
