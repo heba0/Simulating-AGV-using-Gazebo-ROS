@@ -44,7 +44,7 @@ export GAZEBO_PLUGIN_PATH=$HOME/gazebo-tutorials-velodyne-master/velodyne_plugin
 
    ```rosrun rqt_graph rqt_graph```
 
-  - tab6: to see all topics:
+  - tab6 (to see all topics):
 
     ```rostopic list```
 
